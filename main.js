@@ -1,6 +1,5 @@
 const track = document.querySelector("#image-track");
 const image = document.querySelectorAll(".image");
-const mouse = document.querySelector(".mouse");
 
 window.onmousedown = e => {
       track.dataset.mouseDownAt = e.clientX;
@@ -43,30 +42,3 @@ window.onmouseup = () => {
       track.dataset.mouseDownAt = "0";
       track.dataset.prevPercentage = track.dataset.percentage;
 }
-
-/* mouse "shadow" */
-
-document.addEventListener("mousemove", e => {
-      if (e.target.classList.contains("image")) {
-            mouse.animate({ 
-                  opacity: 0
-            }, {
-                  duration: 300,
-                  fill: "forwards"
-            })
-      } else {
-            mouse.animate({
-                  opacity: 1
-            }, {
-                  duration: 300,
-                  fill: "forwards"
-            })
-      }
-
-      let mX = e.clientX;
-      let mY = e.clientY;
-
-      mouse.style.top = `${mY}px`;
-      mouse.style.left = `${mX}px`;
-      
-});
