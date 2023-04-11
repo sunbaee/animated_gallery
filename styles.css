@@ -32,17 +32,3 @@ body {
     object-position: 100% 50%;
     transition: all .3s;
 }
-
-.image:hover {
-    transform: scale(1.05);
-    opacity: 0.6;
-}
-
-.mouse {
-    z-index: 100;
-    display: flex;
-    position: fixed;
-    border-radius: 100%;
-    pointer-events: none;
-    box-shadow: 0 0 5rem 1rem rgba(255, 255, 255, 0.700);
-}
