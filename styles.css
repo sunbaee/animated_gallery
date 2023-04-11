@@ -1,0 +1,48 @@
+:root {
+    --lightblack: rgb(20, 20, 20);
+    --linearblack: linear-gradient(to top, var(--lightblack) 25%, black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--linearblack);
+    overflow: hidden;
+    border-left: 1rem solid linear-gradient(white, black);
+}
+
+#image-track {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    gap: 3vh;
+}
+
+.image {
+    height: 40vh;
+    width: 21vh;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: all .3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.mouse {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    border-radius: 100%;
+    pointer-events: none;
+    box-shadow: 0 0 5rem 1rem rgba(255, 255, 255, 0.700);
+}
