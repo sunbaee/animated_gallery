@@ -6,4 +6,4 @@
 
 ## Guide:
 
-- Access it via the link sunbaee.github.io/animated_gallery/
+- Access it via the link [sunbaee.github.io/animated_gallery/](https://sunbaee.github.io/animated_gallery/)
